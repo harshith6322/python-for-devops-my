@@ -6,7 +6,7 @@ def add():
     b=1
     print(a+b)
     return None 
-
+a=2
 add()
 print(a+b)
 

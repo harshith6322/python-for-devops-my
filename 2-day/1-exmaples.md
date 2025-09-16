@@ -9,6 +9,7 @@ Nice — these keywords are absolutely important for Python and very useful in D
 ```python
 cpu_ok = cpu_usage < 80
 mem_ok = mem_usage < 75
+print(cpu_usage)
 if cpu_ok and mem_ok:
     print("resources OK")
 ```

@@ -11,30 +11,33 @@ print(c)
 #2. string_length
 print(arn.__len__())
 print(len(arn))
-print(arn.strip())
 
 #3. other methods
-print(arn.split("/")[1])
+print(arn.split("/")[0])
+print(arn.split("/"))
 print(arn.upper())
 print(arn.lower())
 print(arn.strip()) #lstrip rstrip
 print(arn.replace("JohnDoe", "harshith"))
 print(arn.strip("").startswith("har")) 
-print(arn.strip("").endswith("e"))
+print(arn.strip("").endswith("E"))
 # count occurrences
 print(arn.count(":")) 
 
 
 #4 substring
 d="i love python"
-if "love" in d:
+if "a" in d:
     print("this is substring")
+elif " " in d:
+    print("space is there")
 else:
-    print("this an sub_string")
+    print("nothing")
 
 #5 string_fing
 print(arn.find("i")) #(returns -1 if not found)
-print(arn.index("i")) #(throws error if not found)
+print(arn.index("i"))
+#print(arn.index("I")) #(throws error if not found)
 
 # join a list into string
 parts = ["arn", "aws", "iam", "123456789012", "user", "JohnDoe"]
